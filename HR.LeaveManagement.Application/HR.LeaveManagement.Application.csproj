@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Persistence\" />
+    <None Remove="Persistence\Contracts\" />
+    <None Remove="Profile\" />
+    <None Remove="AutoMapper.Extensions.Microsoft.DependencyInjection" />
+    <None Remove="DTOs\" />
+    <None Remove="DTOs\Common\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Persistence\" />
+    <Folder Include="Persistence\Contracts\" />
+    <Folder Include="Profiles\" />
+    <Folder Include="DTOs\" />
+    <Folder Include="DTOs\Common\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
+    <PackageReference Include="MediatR" Version="10.0.1" />
+  </ItemGroup>
+</Project>
